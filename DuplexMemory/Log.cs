@@ -13,7 +13,7 @@
         /// <br>File.WriteAllBytes("Sample.zip", zippedBytes);</br>
         /// </summary>
         /// <param name="FullPath">Полный путь к файлу</param>
-        /// <param name="DirName"><br>Имя папки</br><br>Для создания подпапок используйте слэш <b>/</b></br></param>
+        /// <param name="DirName"><br>Имя папки</br><br>Для создания подпапок используйте косую черту <b>/</b></br></param>
         /// <returns>Архив с данными</returns>
         public static byte[] ZipFile(string FullPath, string DirName)
         {
