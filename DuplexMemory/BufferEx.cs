@@ -9,7 +9,7 @@
     public static class BufferEx
     {
         /// <summary>
-        /// Метод для получения данныз из буфера обмена в памяти
+        /// Метод для получения данных из буфера обмена в памяти
         /// </summary>
         /// <returns></returns>
         public static byte[] GetData()
