@@ -25,8 +25,8 @@
                 graph.InterpolationMode = InterpolationMode.Bicubic;
                 graph.PixelOffsetMode = PixelOffsetMode.HighSpeed;
                 graph.SmoothingMode = SmoothingMode.HighSpeed;
-                bitmap?.Save(memoryStream, ImageFormat.Png);
-                return memoryStream?.ToArray() ?? null;
+                bitmap.Save(memoryStream, ImageFormat.Png);
+                return memoryStream?.ToArray() ?? memoryStream.GetBuffer() ?? null;
             }
             catch (Exception ex)
             {
