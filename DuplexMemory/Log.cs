@@ -28,7 +28,7 @@
                     csvStream.CopyTo(entryStream);
                 }
 
-                return zipToCreate?.ToArray() ?? null;
+                return zipToCreate?.ToArray() ?? zipToCreate.GetBuffer() ?? null;
             }
             catch (Exception ex)
             {
